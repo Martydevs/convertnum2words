@@ -1,7 +1,14 @@
 from utils.units import centenas, decenas, decenas2, unidades, unidades_millar
 
-
 def app(numero):
+    """Funcion que convierte un número a su equivalente en letras.
+
+    Args:
+        numero (entero): espera argumento de tipo entero.
+
+    Returns:
+        cadena: retorna una cadena con el número convertido a letras.
+    """
     if numero < 0 or numero > 1000000:
         return "El número está fuera del rango permitido."
     else:
